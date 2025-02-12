@@ -1,15 +1,16 @@
+
 const priceData = {
     "D1": {
-        "8 ft 2 inch": {"8 ft 2 inch": 6851, "9 ft 10 in": 7332, "11 ft 6 in": 7975, "13 ft 1 in": 8243, "14 ft 9 in": 9737, "16 ft 5 in": 10455, "18 ft 0 in": 10956, "19 ft 8 in": 11615},
-        "9 ft 10 in": {"8 ft 2 inch": 7244, "9 ft 10 in": 7999, "11 ft 6 in": 8596, "13 ft 1 in": 9448, "14 ft 9 in": 10506, "16 ft 5 in": 11225, "18 ft 0 in": 11858, "19 ft 8 in": 12926},
-        "11 ft 6 in": {"8 ft 2 inch": 7767, "9 ft 10 in": 8525, "11 ft 6 in": 9265, "13 ft 1 in": 10238, "14 ft 9 in": 11342, "16 ft 5 in": 12462, "18 ft 0 in": 13662, "19 ft 8 in": 14929},
-        "13 ft 1 in": {"8 ft 2 inch": 8022, "9 ft 10 in": 9253, "11 ft 6 in": 10075, "13 ft 1 in": 11291, "14 ft 9 in": 12733, "16 ft 5 in": 14175, "18 ft 0 in": 15539, "19 ft 8 in": 16980}
+        "8 ft 2 inch": {"8 ft 2 inch": 7879, "9 ft 10 in": 8432, "11 ft 6 in": 9171, "13 ft 1 in": 9479, "14 ft 9 in": 11198, "16 ft 5 in": 12023, "18 ft 0 in": 12599, "19 ft 8 in": 13357},
+        "9 ft 10 in": {"8 ft 2 inch": 8331, "9 ft 10 in": 9199, "11 ft 6 in": 9885, "13 ft 1 in": 10865, "14 ft 9 in": 12082, "16 ft 5 in": 12909, "18 ft 0 in": 13637, "19 ft 8 in": 14865},
+        "11 ft 6 in": {"8 ft 2 inch": 8932, "9 ft 10 in": 9804, "11 ft 6 in": 10655, "13 ft 1 in": 11774, "14 ft 9 in": 13043, "16 ft 5 in": 14331, "18 ft 0 in": 15711, "19 ft 8 in": 17168},
+        "13 ft 1 in": {"8 ft 2 inch": 9225, "9 ft 10 in": 10641, "11 ft 6 in": 11586, "13 ft 1 in": 12985, "14 ft 9 in": 14643, "16 ft 5 in": 16301, "18 ft 0 in": 17870, "19 ft 8 in": 19527}
     },
     "D2": {
-        "8 ft 2 inch": {"21 ft 4 in": 13728, "22 ft 11 in": 14363, "24 ft 7 in": 14876, "26 ft 3 in": 15560, "27 ft 10 in": 16180, "29 ft 6 in": 16724, "31 ft 2 inch": 17285, "32 ft 10 inch": 17886},
-        "9 ft 10 in": {"21 ft 4 in": 14484, "22 ft 11 in": 15086, "24 ft 7 in": 15947, "26 ft 3 in": 17030, "27 ft 10 in": 18113, "29 ft 6 in": 19139, "31 ft 2 inch": 20222, "32 ft 10 inch": 21299},
-        "11 ft 6 in": {"21 ft 4 in": 16189, "22 ft 11 in": 17396, "24 ft 7 in": 18656, "26 ft 3 in": 19923, "27 ft 10 in": 21191, "29 ft 6 in": 22390, "31 ft 2 inch": 23658, "32 ft 10 inch": 24917},
-        "13 ft 1 in": {"21 ft 4 in": 18413, "22 ft 11 in": 19786, "24 ft 7 in": 21219, "26 ft 3 in": 22661, "27 ft 10 in": 24102, "29 ft 6 in": 25466, "31 ft 2 inch": 26908, "32 ft 10 inch": 28341}
+        "8 ft 2 inch": {"21 ft 4 in": 17160, "22 ft 11 in": 17954, "24 ft 7 in": 18595, "26 ft 3 in": 19450, "27 ft 10 in": 20225, "29 ft 6 in": 20905},
+        "9 ft 10 in": {"21 ft 4 in": 18105, "22 ft 11 in": 18858, "24 ft 7 in": 19934, "26 ft 3 in": 21288, "27 ft 10 in": 22641, "29 ft 6 in": 23924},
+        "11 ft 6 in": {"21 ft 4 in": 20236, "22 ft 11 in": 21745, "24 ft 7 in": 23320, "26 ft 3 in": 24904, "27 ft 10 in": 26489, "29 ft 6 in": 27988},
+        "13 ft 1 in": {"21 ft 4 in": 23016, "22 ft 11 in": 24733, "24 ft 7 in": 26524, "26 ft 3 in": 28326, "27 ft 10 in": 30128, "29 ft 6 in": 31833}
     }
 };
 
@@ -276,7 +277,7 @@ function printOrder() {
     printWindow.document.write(`
         <html>
         <head>
-            <title>Solara Order Details</title>
+            <title>ELITE Order Details</title>
             <style>
                 body { 
                     font-family: Arial, sans-serif; 
@@ -312,7 +313,7 @@ function printOrder() {
         </head>
         <body>
             <div class="header">
-                <h1>Solara Pergola Order</h1>
+                <h1>ELITE Pergola Order</h1>
                 <p>Date: ${new Date().toLocaleDateString()}</p>
                 <p>Order Reference: SO-${Math.random().toString(36).substr(2, 9).toUpperCase()}</p>
             </div>
@@ -333,7 +334,7 @@ function printOrder() {
             </div>
             ${screenSection}
             <div style="margin-top: 40px; font-size: 0.9em; color: #666;">
-                <p>This is a computer-generated document. For questions or support, please contact your local Solara representative.</p>
+                <p>This is a computer-generated document. For questions or support, please contact your local ELITE representative.</p>
             </div>
         </body>
         </html>
