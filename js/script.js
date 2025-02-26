@@ -182,7 +182,7 @@ function calculatePergolaPrice() {
   }
 
   // Fan Beam
-  let fanCost = parseFloat(formData.fans || 0) * 250;
+  let fanCost = parseFloat(formData.pergolaFans || 0) * 250;
   totalPrice += fanCost;
   if (fanCost > 0) {
     adjustments.push(`Fans: +$${fanCost.toFixed(2)}`);
