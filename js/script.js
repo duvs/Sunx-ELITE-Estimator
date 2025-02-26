@@ -165,7 +165,7 @@ function calculatePergolaPrice() {
   }
 
   // LED Perimeter
-  if (formData.pergolaLedPerimeter === "Yes") {
+  if (formData.pergolaLedPerimeter.value === "Yes") {
     const lengthFeet = convertToFeet(formData.pergolaLength.text);
     const projectionFeet = convertToFeet(formData.pergolaProjection.text);
     const ledCost = (lengthFeet + projectionFeet) * 2 * 4;
